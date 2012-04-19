@@ -13,4 +13,4 @@ app.get '/', (req, res) ->
 app.get '/:abug', (req, res) ->
   res.render 'index', {"abug": req.params.abug}
 
-app.listen 27389
+app.listen process.env.PORT
