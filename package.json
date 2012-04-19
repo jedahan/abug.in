@@ -1,0 +1,10 @@
+{
+  "name": "abug.in",
+  "version": "0.0.1",
+  "author": "Jonathan Dahan <jonathan@jedahan.com>",
+  "dependencies": {
+    "coffee-script": "1.x",
+    "express": "3.x",
+    "hogan.js": "2.x"
+  }
+}
