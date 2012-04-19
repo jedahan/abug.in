@@ -9,13 +9,15 @@
 </head>
 
 <body>
-	Ripped off audio from notch's new game trailer for http://0x10C.com .
-	Thanks to speak.js and emscripten. Code is http://github.com/jedahan/abug-in .
+	Ripped off audio from notch's new game trailer for <a href="http://0x10C.com">http://0x10C.com</a>.
+	Code at <a href="http://github.com/jedahan/abug-in">http://github.com/jedahan/abug-in</a>, pull requests welcome.
+	{{^abug}}
+		Put anything after the domain name except spaces, eg: <a href='http://abug.in/every_thing'>http://abug.in/every_thing</a>.
+		<audio src='this_lead_to_a_severe_bug_in_the_included_drivers.wav' autoplay></audio>
+	{{/abug}}
 	{{#abug}}
+		You can replace '{{abug}}' in the url with whatever you want, sans spaces.
     	<audio src='this_lead_to_a_severe_bug_in.wav' autoplay onended="speak('{{abug}}', {noWorker: true})" ></audio>
-    {{/abug}}
-    {{^abug}}
-    	<audio src='this_lead_to_a_severe_bug_in_the_included_drivers.wav' autoplay></audio>
     {{/abug}}
     <div id="audio"></div>
 </body>
