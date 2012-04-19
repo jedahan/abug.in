@@ -1,11 +1,18 @@
 <!doctype html>
 <head>
 	<title>a bug in {{abug}}</title>
-	<script src="scripts/speakGenerator.js" ></script>
-	<script src="scripts/speakClient.js" ></script>
+	{{#abug}}
+		<script src="scripts/speakGenerator.js" ></script>
+		<script src="scripts/speakClient.js" ></script>
+	{{/abug}}
 </head>
 
 <body>
-    <audio src='this_lead_to_a_severe_bug_in.wav' autoplay onended="speak('{{abug}}', {noWorker: true})" ></audio>
+	{{#abug}}
+    	<audio src='this_lead_to_a_severe_bug_in.wav' autoplay onended="speak('{{abug}}', {noWorker: true})" ></audio>
+    {{/abug}}
+    {{^abug}}
+    	<audio src='this_lead_to_a_severe_bug_in_the_included_drivers.wav' autoplay></audio>
+    {{/abug}}
     <div id="audio"></div>
 </body>
