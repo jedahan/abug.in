@@ -5,6 +5,7 @@
   "dependencies": {
     "coffee-script": "1.x",
     "express": "",
-    "hogan.js": "2.x"
+    "hogan.js": "2.x",
+    "consolidate": ""
   }
 }
