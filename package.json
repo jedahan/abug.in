@@ -4,7 +4,7 @@
   "author": "Jonathan Dahan <jonathan@jedahan.com>",
   "dependencies": {
     "coffee-script": "1.x",
-    "express": "3.x",
+    "express": "",
     "hogan.js": "2.x"
   }
 }
