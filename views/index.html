@@ -5,9 +5,12 @@
 		<script src="scripts/speakGenerator.js" ></script>
 		<script src="scripts/speakClient.js" ></script>
 	{{/abug}}
+	<script src="scripts/google_analytics.js" ></script>
 </head>
 
 <body>
+	Ripped off audio from notch's new game trailer for http://0x10C.org .
+	Thanks to speak.js and emscripten :)
 	{{#abug}}
     	<audio src='this_lead_to_a_severe_bug_in.wav' autoplay onended="speak('{{abug}}', {noWorker: true})" ></audio>
     {{/abug}}
